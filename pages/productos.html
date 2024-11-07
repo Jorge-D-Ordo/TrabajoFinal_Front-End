@@ -1,0 +1,1444 @@
+<!DOCTYPE html><!--avisa al navegador el formato html5-->
+<html lang="es"><!--lang = lenguaje en español-->
+    <!-- alt z cre multininea del texto para que entre la ventana -->    
+    <!--etiqueta de configuraciones para el navegador-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos | Fragancias Argentinas - Venta perfumes Millanel</title>
+        <!-- favicon icono-->
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <!-- aca va el contenido que ve el usuario-->
+    <body>
+        <header id="header" class="colorPrincipal">
+            <section class="container_header_grid">
+                <div class="logo_institucional">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/img/rosa _128px.png" alt="logo de Fragancias Argentinas, un diujo de la flor de la rosa"> 
+                    </a> 
+                </div>
+                <div class="empresa">
+                    <p>Fragancias Argentinas</p> 
+                </div> 
+                <!--******************@media  Estos pasos son para la Movil ******************-->
+                <div class="nav_desplegable">
+                    <button  class="nav_boton" aria-expanded="false">
+                        <img src="../assets/img/Redes/menu3lineas.svg" alt="icono de 3 lineas de menu"> 
+                    </button>
+                    <nav class="nav-item">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>  
+                            <li><a href="./productos.html">Productos</a></li>
+                            <li><a href="../index.html#nosotros">Nosotros</a></li>
+                            <li><a href=".contacto.html">Contacto</a></li>
+                            <li>
+                                <a href=".carrito.html" >
+                                    <img src="../assets/img/Redes/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>        
+                </div>
+                <!--******************@media  Estos pasos son para la Monitor ******************-->
+                <div class="menu_principal">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>   <!-- pagina con ofrtas-->
+                            <li><a href="./productos.html">Productos</a></li>
+                            <li><a href="../index.html#nosotros">Nosotros</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                            <li>
+                                <a href="./carrito.html" >
+                                    <img src="../assets/img/Redes/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>        
+                </div>
+                <div class="logo_productos">
+                    <a href="https://www.millanel.com" target="_blank">
+                        <img class="logo" src="../assets/img/millanel_logo.png" alt="logo de millanel cosmeticos, logotipo flor con nombre debajo "> 
+                    </a>
+                </div>
+                <div class="filtro_producto">
+                    <label for="opcionGenero">Fragancia:</label>
+                    <select id="opcionGenero">
+                        <option value="todos" selected>todas</option>
+                        <option value="femenino">femeninas</option>
+                        <option value="masculino">masculinas</option>
+                        <option value="unisex">unisex</option> 
+                    </select>    
+                </div>
+                <div class="busqueda_producto">
+                    <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
+                </div>
+                <div class="inicioSesion" id="usuario">
+                    <a href="./usuario.html">Sesión</a>
+                </div>
+            </section>
+        </header>
+        <main class="colorFondo">
+            <h1>Nuestra lista de perfumes</h1>
+            <section id="fragancia_f">
+                <h2>Fragancias Femeninas</h2>
+                <div class="contenedor_tarjetas">
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume001.jpg" alt="productoF001, perfume mujer, Alternativa de Chanel Nº5 de Chanel (floral aldehidico), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF001-30">                            
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>                           
+                            </li>
+                            <li id="productoF001-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF001-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume019.jpg" alt="productoF019, perfume mujer, Alternativa de Tommy Girl de Tommy Hilfiger (floral frutal), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li  id="productoF019-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF019-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p> Comprar</p>
+                            </li>
+                            <li id="productoF019-100"">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p >Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume024.jpg" alt="productoF024, perfume mujer, Alternativa de Carolina Herrera de Carolina Herrera (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF024-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF024-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF024-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p">Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume036.jpg" alt="productoF036, perfume mujer, Alternativa de 212 de Carolina Herrera (chypre floral), presentacion 30ml, 60ml,100ml">
+                        <ul> 
+                            <li id="productoF036-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF036-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF036-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume062.jpg" alt="productoF062, perfume mujer, Alternativa de Flower de Kenzo (oriental floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF062-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF062-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF062-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume076.jpg" alt="productoF076, perfume mujer, Alternativa de Cabotine de Gres (floral verde), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF076-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF076-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF076-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume080.jpg" alt="productoF080, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF080-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF080-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF080-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume081.jpg" alt="productoF081, perfume mujer, Alternativa de Halloween de Jesús Del Pozo (floral frutal), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF081-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF081-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF081-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume096.jpg" alt="productoF096, perfume mujer, Alternativa de J'adore de Cristian Dior (floral frutal), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoF096-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF096-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF096-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume117.jpg" alt="productoF117, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF117-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF117-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF117-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume124.jpg" alt="productoF124, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF124-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF124-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF124-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume132.jpg" alt="productoF132, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF132-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF132-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF132-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume133.jpg" alt="productoF133, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF133-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF133-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF133-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume161.jpg" alt="productoF161, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF161-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF161-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF161-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume173.jpg" alt="productoF173, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF173-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF173-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF173-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume185.jpg" alt="productoF185, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF185-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF185-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF185-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume186.jpg" alt="productoF186, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF186-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF186-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF186-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume201.jpg" alt="productoF201, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF201-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF201-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF201-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume204.jpg" alt="productoF204, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF204-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF204-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF204-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume206.jpg" alt="productoF206, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF206-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF206-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF206-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume209.jpg" alt="productoF209, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF209-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF209-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF209-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume215.jpg" alt="productoF215, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF215-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF215-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF215-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume221.jpg" alt="productoF221, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF221-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF221-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF221-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume233.jpg" alt="productoF233, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF233-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF233-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF233-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume242.jpg" alt="productoF242, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF242-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF242-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF242-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume247.jpg" alt="productoF247, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF247-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF247-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF247-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume262.jpg" alt="productoF262, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF262-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF262-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF262-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume263.jpg" alt="productoF263, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF263-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF263-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF263-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume266.jpg" alt="productoF266, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoF266-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF266-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF266-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume268.jpg" alt="productoF268, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF268-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF268-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF268-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume269.jpg" alt="productoF269, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF269-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF269-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF269-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume272.jpg" alt="productoF272, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF272-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF272-60">
+                                <p>60ml</p>
+                                    <p>$ 12699,99</p>
+                                    <p>Comprar</p>
+                            </li>
+                            <li id="productoF272-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume275.jpg" alt="productoF275, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF275-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF275-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF275-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume279.jpg" alt="productoF279, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF279-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF279-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF279-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume282.jpg" alt="productoF282, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF282-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF282-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF282-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume283.jpg" alt="productoF283, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoF283-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF283-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF283-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume285.jpg" alt="productoF285, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoF285-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF285-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF285-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--             
+                aun falta agregar unos cuantos femeninos el siguiente es el numro  117>
+                </a>
+                -->
+            </section>
+            <section id="fragancia_m">
+                <h2>Fragancias Masculinas</h2>
+                <div class="contenedor_tarjetas">
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/M_Perfume029.jpg" alt="productoM029, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoM029-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM029-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM029-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume065.jpg" alt="productoM065, perfume hombre, Alternativa de 212 Men de Carolina Herrera (floral), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li id="productoM065-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM065-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM065-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume073.jpg" alt="productoM073, perfume hombre, Alternativa de Polo Sport de Ralph Lauren (aromática verde), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM073-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM073-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM073-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume092.jpg" alt="productoM092, perfume hombre, Alternativa de Polo Blue de Ralph Lauren (fougére), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM092-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM092-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM092-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume137.jpg" alt="productoM137, perfume hombre, Alternativa de One Million de Paco Rabanne (oriental amaderada), presentacion 30ml,60ml,100ml">                    
+                        <ul> 
+                            <li id="productoM137-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM137-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM137-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume147.jpg" alt="productoM147, perfume hombre, Alternativa de 212 VIP Men de Carolina Herrera (ámbar amaderada), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM147-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM147-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM147-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume167.jpg" alt="productoM167, perfume hombre, Alternativa de One Million Intense de Paco Rabanne (oriental especiada), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM167-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM167-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM167-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume168.jpg" alt="productoM168, perfume hombre, Alternativa de Invictus de Paco Rabanne (amaderada acuática), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM168-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM168-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM168-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume182.jpg" alt="productoM182, perfume hombre, Alternativa de Black XS L'aphrodislaque de Paco Rabanne (oriental amaderada), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM182-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM182-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM182-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume184.jpg" alt="productoM184, perfume hombre, Alternativa de Blue Seduction de Antonio Banderas (acuática), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM184-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM184-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM184-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume208.jpg" alt="productoM208, perfume hombre, Alternativa de Invictus Aqua de Paco Rabanne (amaderada fougére), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM208-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM208-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM208-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume211.jpg" alt="productoM211, perfume hombre, Alternativa de The Golden Secret de Antonio Banderas (amaderada especiada), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM211-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM211-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM211-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume234.jpg" alt="productoM234, perfume hombre, Alternativa de 212 VIP Black (aromática fougére), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM234-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM234-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM234-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume245.jpg" alt="productoM245, perfume hombre, Alternativa de Polo Red de Ralph Lauren (amaderada especiada), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM245-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM256-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM245-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume246.jpg" alt="productoM246, perfume hombre, Alternativa de Bad Boy de Carolina Herrera (oriental especiada), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM246-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM246-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM246-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume256.jpg" alt="productoM256, perfume hombre, Alternativa de Impact de Tommy Hilfiger (amaderada citrica), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM256-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM256-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM256-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+
+                        <img src="../assets/img/productos/M_Perfume257.jpg" alt="productoM257, perfume hombre, Alternativa de Wanted by night de Azzaro (amaderada aromática), presentacion 30ml,60ml,100ml">          
+                        <ul> 
+                            <li id="productoM257-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM257-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM257-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume259.jpg" alt="productoM259, perfume hombre, Alternativa de Invictus Legend de Paco Rabanne (amaderada aronética), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM259-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM259-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM259-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume265.jpg" alt="productoM265, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM265-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM265-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM265-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume270.jpg" alt="productoM270, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM270-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM270-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM270-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume271.jpg" alt="productoM271, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM271-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM271-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM271-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume276.jpg" alt="productoM276, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM276-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM276-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM276-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume284.jpg" alt="productoM284, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoF284-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF284-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoF284-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta"> 
+                        <img src="../assets/img/productos/M_Perfume287.jpg" alt="productoM287, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoM287-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM287-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM287-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">                
+                        <img src="../assets/img/productos/M_Perfume292.jpg" alt="productoM292, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml"> 
+                        <ul> 
+                            <li id="productoM292-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM292-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoM292-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div> 
+                </div>             
+            </section>
+            <section id="fragancia_u">  
+                <h2>Fragancias Unisex</h2>
+                <div class="contenedor_tarjetas">   
+                    <div class="item-tarjeta">            
+                        <img src="../assets/img/productos/U_Perfume071.jpg" alt="productoU071, perfume hombre, Alternativa de Kenzo Pour Homme (chypre fesco), presentacion 30ml,60ml,100ml">                
+                        <ul> 
+                            <li id="productoU071-30">
+                                <p>30ml</p>
+                                <p>$ 9499,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoU071-60">
+                                <p>60ml</p>
+                                <p>$ 12699,99</p>
+                                <p>Comprar</p>
+                            </li>
+                            <li id="productoU071-100">
+                                <p>100ml</p>
+                                <p>$ 15999,99</p>
+                                <p>Comprar</p>
+                            </li>    
+                        </ul>
+                    </div>    
+                </div>
+                <!--    REEVISAR         
+                <a href="../assets/img/gato.jpg" download target="_blank">
+                    <img src="../assets/img/gato.jpg" alt="Gato blanco con rayas con cara seria" width="200px" loading="lazy">
+                </a>
+                -->
+            </section>
+            <!-- 
+            <section>
+                <h2>Video de youtube</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3GymExBkKjE?si=sGjoq_WPl79QrYbx&amp;controls=0&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            -->
+            <!-- 
+            <section>
+                <h2>Tarea insertar un audio y un video propio y jugar con los atributos</h2>
+                <p>video</p>
+            -->
+                <!--etiqueta video-->
+            <!--    
+                <video width="320" height="240" controls autoplay muted>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <p>audio</p>
+            -->    
+                <!--etiqueta audio-->
+            <!--
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                
+
+            </section>
+            -->
+        </main>
+        <aside>
+            <video autoplay muted loop controls>
+                <source src="./assets/video/Publicidad1.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop controls>
+                <source src="./assets/video/Publicidad2.mp4" type="video/mp4">
+            </video>
+        </aside>
+        <footer id="footer" class="colorPrincipal">
+            <section class="contendor_comunicacion">
+                <div class="comunicacion-flex-item">
+                    <p ><span class="fuenteNegrita60">Dirección:</span> Avenida Rivadavia 5450, CABA, CP 1405</p>
+                    <p><span class="fuenteNegrita60">Teléfono:</span> (11) 5360-XXXX</p>
+                    <p><span class="fuenteNegrita60">Correo electrónico:</span>  fragancias.argentinas@gmail.com</p>
+                </div>
+                <div class="comunicacion-flex-item">
+                    <p>Todos los derechos reservados 2024</p>
+                    <p>Millanel cosmetico es marca registrada</p>
+                </div>
+                <div class="iconos_redes">
+                    <a href="https://www.facebook.com" target="_blank">
+                    <img src="../assets/img/Redes/2023_Facebook_icon.svg" alt="Logo Facebook" style="width:20px">
+                </a>
+                <a href="https://x.com/?lang=es" target="_blank">
+                    <img src="../assets/img/Redes/X_logo_2023.svg" alt="Logo X ex twitter" style="width:20px">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../assets/img/Redes/Instagram_logo_2022.svg" alt="Logo instragram" style="width:20px">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="../assets/img/Redes/linkedin_icon.svg" alt="Logo linkedin" style="width:20px">
+                </a>
+                <a href="https://web.telegram.org/k/"target="_blank">
+                    <img src="../assets/img/Redes/Telegram_logo.svg" alt="Logo Telegram" style="width:21px">
+                </a>
+                <a href="https://discord.com/"target="_blank">
+                    <img src="../assets/img/Redes/discord-round-color-icon.svg" alt="Logo Discord" style="width:21px">
+                </a>  
+                <a href="https://web.whatsapp.com/send?phone=+5491100000000" class="conf-whatsapp" target="_blank">
+                    <img src="../assets/img/Redes/WhatsApp.svg" alt="Logo WhatsApp" >
+                </a> 
+            </section>  
+        </footer>
+    </body>
+</html>
