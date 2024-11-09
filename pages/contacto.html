@@ -1,184 +1,144 @@
+<!-- alt z cre multininea del texto para que entre la ventana -->    
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto | Fragancias Argentinas - Venta perfumes Millanel</title>
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
-    <body>
-        <header id="header" class="color_principal">
-            <section class="container_header_grid">
-                <div class="logo_institucional">
-                    <a href="index.html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragancias Argentinas | Venta perfumes Millanel </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="contenerdorBodyGrid">
+    <header class="header colorPrincipal">
+        <section class="contenerdorHeaderGrid">
+            <div class="logoInstitucional">
+                <a href="../index.html">
                     <img class="logo" src="../assets/img/rosa _128px.png" alt="logo de Fragancias Argentinas, un diujo de la flor de la rosa"> 
-                    </a>        
-                </div>
-                <div class="menu_principal">
-                    <nav>
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>   <!-- pagina con ofrtas-->
-                            <li><a href="./productos.html">Productos</a></li>
-                            <li><a href="../index.html#nosotros">Nosotros</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                            <li><a href="./carrito.html" >
-                            <img src="../assets/img/Redes/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
-                            </a></li>
-                        </ul>
-                    </nav>        
-                </div>
-                <div class="logo_productos">
-                    <a href="https://www.millanel.com" target="_blank">
+                </a> 
+            </div>
+            <div class="logoProductos">
+                <a href="https://www.millanel.com" target="_blank">
                     <img class="logo" src="../assets/img/millanel_logo.png" alt="logo de millanel cosmeticos, logotipo flor con nombre debajo "> 
-                    </a>
-                </div>
-                <div class="filtro_producto">
-                    <label for="genero">Fragancia :</label>
-                    <select name="opcion_genero" id="opcionGenero">
-                        <option value="todos"selected>todas</option>
-                        <option value="femenino">femeninas</option>
-                        <option value="masculino">masculinas</option>
-                        <option value="unisex">unisex</option>  
-                    </select>    
-                </div>
-                <div class="busqueda_producto">
-                    <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
-                </div>
-                <div class="cta_usuario_sup">
-                    <input type="text" placeholder="Usuario...."id="RegUsuario">
-                </div>
-                <div class="cta_usuario_inf">
-                    <input type="password" placeholder="Clave...."id="RegClave">
-                </div>
-                <div class="cta_usuario_reg">
-                    <button onclick="location.href='./registro.html'">Nuevo usuario</button> 
-                </div>
-            </section>
-        </header>
-        <main class="color_fondo">
-                <h1>Contacto</h1>
-                <h2>conunicarte con nosotros por: </h2>
-            <section class="flex-container-contacto">    
-                <div class="flex-item-contacto">
-                    <!--
-                    <div class="flex-item-contacto">
-                    -->
-                    <h3>formulario de consultas o comentarios</h3>
-                    <form action="">
-                        <!--
-                        <div class="flex-item-contacto">
-                        -->    
-                            <input type="Ingrese su Nombre completo" required name="nombre" id="nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="25">
-                        <!--</div>
-                        <div class="flex-item-contacto">
-                        -->
-                            <input type="Ingrese su email" required name="email" id="email" placeholder="Ingrese un email valido"> 
-                        <!--</div>
-                        <div class="flex-item-contacto">
-                        -->
-                            <select name="provincia" id="provincia">
-                                <option value="1">Buenos Aires</option>
-                                <option value="2" selected>CABA (Ciud.Aut.Bs.As.)</option>
-                                <option value="3">Catamarca</option>
-                                <option value="4">Chaco</option>
-                                <option value="5">Chubut</option>
-                                <option value="6">Córdoba</option>
-                                <option value="7">Corrientes</option>
-                                <option value="8">Entre Ríos</option>
-                                <option value="9">Formosa</option>
-                                <option value="10">Jujuy</option>
-                                <option value="11">La Pampa</option>
-                                <option value="12">La Rioja</option>
-                                <option value="13">Mendoza</option>
-                                <option value="14">Misiones</option>
-                                <option value="15">Neuquén</option>
-                                <option value="16">Río Negro</option>
-                                <option value="17">Salta</option>
-                                <option value="18">San Juan</option>
-                                <option value="19">San Luis</option>
-                                <option value="20">Santa Cruz</option>
-                                <option value="21">Santa Fe</option>
-                                <option value="22">Santiago del Estero</option>
-                                <option value="23">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
-                                <option value="24">Tucumán</option>
-                            </select>
-                        <!--</div>
-                        <div class="flex-item-contacto">
-                        -->
-                            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su número telefónico">
-                        <!--</div>
-                        <div class="flex-item-contacto">
-                        -->
-                            <input type="text" required name="mensaje" id="mensaje" placeholder="Ingrese su mensaje o su consulta por favor" minlength="30" maxlength="2000">
-                        <!--</div>
-                        -->
-                    </form>    
-                </div>
-            <!--</section> 
-            <section class="flex-container-contacto">     
-                <div class="flex-item-contacto">
-            -->        
-                <div class="flex-item-contacto">           
-                    <h3>comunicate por estos medios: </h3> 
-                        <!-- <div class="flex-item-contacto">
-                    -->
-                        <img src="../assets/img/Redes/telefono.svg" alt="Logo Telefono" style="width:21px">   (11) 5360-XXXX      
-                    <!--</div>
-                    <div class="flex-item-contacto">
-                    -->    
-                        <img src="../assets/img/Redes/email.svg" alt="Logo email" style="width:21px">   fragancias.argentinas@gmail.com      
-                    <!--</div>
-                    <div class="flex-item-contacto">
-                    -->    
-                        <a href="https://web.whatsapp.com/"target="_blank">
-                            <p> <img src="../assets/img/Redes/WhatsApp.svg" alt="Logo WhatsApp" style="width:21px">   +54 911 5360-XXXX
-                        </a>
-                    <!--</div>
-                    <div class="flex-item-contacto">
-                    -->    
-                        <a href="https://www.facebook.com" target="_blank">
-                            <img src="../assets/img/Redes/2023_Facebook_icon.svg" alt="Logo Facebook" style="width:20px"> https://www.facebook.com/profile.php?id=10008913496xxxx
-                        </a>
-                    <!--</div>
-                    <div class="flex-item-contacto">
-                    -->
-                        <a href="https://x.com/?lang=es" target="_blank">
-                            <img src="../assets/img/Redes/X_logo_2023.svg" alt="Logo X ex twitter" style="width:20px"> https://x.com/fragancias_argentinas
-                        </a>
-                    <!--</div>
-                    <div class="flex-item-contacto">
-                    -->    
-                        <a href="https://www.instagram.com" target="_blank">
-                            <img src="../assets/img/Redes/Instagram_logo_2022.svg" alt="Logo instragram" style="width:20px">  https://www.instagram.com/fragancias_argentinas
-                        </a>
-                    <!--</div>
-                    <div class="flex-item-contacto">
-                    -->
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <img src="../assets/img/Redes/linkedin_icon.svg" alt="Logo linkedin" style="width:20px"> https://www.linkedin.com/in/fragancias_argentinas
-                        </a>
-                    <!--</div>
-                    <div class="flex-item-contacto">
-                    -->
-                        <a href="https://web.telegram.org/k/"target="_blank">
-                            <img src="../assets/img/Redes/Telegram_logo.svg" alt="Logo Telegram" style="width:21px"> https://t.me/fragancias_argentinas
-                        </a>
-                    <!--</div>
-                    <div class="flex-item-contacto">
-                    -->    
-                        <a href="https://discord.com/"target="_blank">
-                            <img src="../assets/img/Redes/discord-round-color-icon.svg" alt="Logo Discord" style="width:21px"> https://discord.gg/invite/WXY9aH7
-                        </a>
-                    <!--</div>
-                    -->                         
-                </div>
-            </section>          
-            <h2>Visitanos en: </h2>
-            <p><span class="fuenteNegrita60">Dirección:</span> Avenida Rivadavia 5450, CABA, CP 1405</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3283.330970078389!2d-58.444370925314786!3d-34.62107555841321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1728676103257!5m2!1ses!2sar" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </main>
->        
-    </body>
+                </a>
+            </div>
+            <div class="empresa">
+                <p>Fragancias Argentinas</p> 
+            </div> 
+            <div class="sesion" id="sesion">
+                <a href="./usuario.html">Sesión</a>
+            </div>
+            <div class="navPrincipal"> <!-- para monitores y tablets -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>  
+                        <li>
+                            <a href="./productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="../index.html/nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="./carrito.html" >
+                                <img src="../assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>        
+            </div>
+            <div class="navDesplegable colorPrincipal" ><!-- para moviles -->
+                <button  class="navBoton" aria-expanded="false">
+                    <img src="../assets/img/iconos/menu3lineas.svg" alt="icono de 3 lineas de menu"> 
+                </button>
+                <nav class="navDesplegable-item">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>  
+                        <li>
+                            <a href="./productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="./carrito.html" >
+                                <img src="../assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>        
+            </div>
+            <div class="filtroProducto">
+                <label for="opcionGenero">Fragancia:</label>
+                <select id="opcionGenero">
+                    <option value="todos" selected>todas</option>
+                    <option value="femenino">femeninas</option>
+                    <option value="masculino">masculinas</option>
+                    <option value="unisex">unisex</option> 
+                </select>    
+            </div>
+            <div class="busquedaProducto">
+                <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <p>main</p>
+        <h1>main</h1>
+        <h2>main</h2>
+        <h3>main</h3>
+        <h4>main</h4>
+        <h5>main</h5>
+    </main>
+    <aside class="aside">
+        <h2>aside   espacio pubicitario   </h2>  
+        <h3>      su agancia de viaje                 destinos increibles</h3>
+    </aside>
+    <footer class="footer colorPrincipal">
+        <div class="contactoContenedor">
+            <div class="contactoItem">
+                <p><span class="fuenteNegrita6">Dirección:</span> Avenida Rivadavia 5450, CABA, CP 1405</p>
+                <p><span class="fuenteNegrita6">Teléfono:</span> (11) 5360-XXXX</p>
+                <p><span class="fuenteNegrita6">Correo electrónico:</span>  fragancias.argentinas@gmail.com</p>
+            </div>
+            <div class="contactoItem">
+                <p>Millanel cosmetico es marca registrada</p>
+                <p>Todos los derechos reservados 2024</p>
+            </div>
+        </div> 
+        <div class="iconosRedes">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../assets/img/Redes/2023_Facebook_icon.svg" alt="Logo Facebook" style="width:20px">
+            </a>
+            <a href="https://x.com/?lang=es" target="_blank">
+                <img src="../assets/img/Redes/X_logo_2023.svg" alt="Logo X ex twitter" style="width:20px">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../assets/img/Redes/Instagram_logo_2022.svg" alt="Logo instragram" style="width:20px">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="../assets/img/Redes/LinkedIn_icon2.svg" alt="Logo linkedin" style="width:20px">
+            </a>
+            <a href="https://web.telegram.org/k/"target="_blank">
+                <img src="../assets/img/Redes/Telegram_logo.svg" alt="Logo Telegram" style="width:21px">
+            </a>
+            <a href="https://discord.com/"target="_blank">
+                <img src="../assets/img/Redes/discord-round-color-icon.svg" alt="Logo Discord" style="width:21px">
+            </a>  
+        </div>
+        <div class="configWhatsapp">     
+            <a href="https://web.whatsapp.com/send?phone=+5491100000000" target="_blank">
+                <img src="../assets/img/Redes/WhatsApp.svg" alt="Logo WhatsApp" >
+            </a> 
+        </div>
+    </footer>
+</body>
 </html>
