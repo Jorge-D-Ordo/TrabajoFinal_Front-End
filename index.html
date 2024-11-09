@@ -1,11 +1,107 @@
+<!-- alt z cre multininea del texto para que entre la ventana -->    
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fragancias Argentinas | Venta perfumes Millanel </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
-<body>
- <p>Hola</p>
+<body class="contenerdorBodyGrid">
+    <header class="header colorPrincipal">
+        <section class="contenerdorHeaderGrid">
+            <div class="logoInstitucional">
+                <a href="index.html">
+                    <img class="logo" src="./assets/img/rosa _128px.png" alt="logo de Fragancias Argentinas, un diujo de la flor de la rosa"> 
+                </a> 
+            </div>
+            <div class="logoProductos">
+                <a href="https://www.millanel.com" target="_blank">
+                    <img class="logo" src="./assets/img/millanel_logo.png" alt="logo de millanel cosmeticos, logotipo flor con nombre debajo "> 
+                </a>
+            </div>
+            <div class="empresa">
+                <p>Fragancias Argentinas</p> 
+            </div> 
+            <div class="sesion" id="sesion">
+                <a href="./pages/usuario.html">Sesión</a>
+            </div>
+            <div class="navPrincipal"> <!-- para monitores y tablets -->
+                <nav>
+                    <ul>
+                        <li  class="navItem">
+                            <a href="index.html">Inicio</a>
+                        </li>  
+                        <li class="navItem">
+                            <a href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#nosotros">Nosotros</a>
+                        </li>
+                        <liv class="navItem">
+                            <a href="./pages/contacto.html">Contacto</a>
+                        </liv>
+                        <li class="navItem">
+                            <a href="./pages/carrito.html" >
+                            <img src="./assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                        </a></li>
+                    </ul>
+                </nav>        
+            </div>
+            <div class="navDesplegable colorPrincipal" ><!-- para moviles -->
+                <button  class="navBoton" aria-expanded="false">
+                    <img src="./assets/img/iconos/menu3lineas.svg" alt="icono de 3 lineas de menu"> 
+                </button>
+                <nav class="navDesplegable-item">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>  
+                        <li>
+                            <a href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#nosotros">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="./pages/carrito.html" >
+                                <img src="./assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>        
+            </div>
+            <div class="filtroProducto">
+                <label for="opcionGenero">Fragancia:</label>
+                <select id="opcionGenero">
+                    <option value="todos" selected>todas</option>
+                    <option value="femenino">femeninas</option>
+                    <option value="masculino">masculinas</option>
+                    <option value="unisex">unisex</option> 
+                </select>    
+            </div>
+            <div class="busquedaProducto">
+                <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <p>main</p>
+        <h1>main</h1>
+        <h2>main</h2>
+        <h3>main</h3>
+        <h4>main</h4>
+        <h5>main</h5>
+    </main>
+    <aside class="aside">
+        <p>aside</p>
+    </aside>
+    <footer class="footer">
+        <p>footer</p>        
+    </footer>
 </body>
 </html>
