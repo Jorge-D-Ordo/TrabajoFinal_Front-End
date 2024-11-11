@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragancias Argentinas | Venta perfumes Millanel </title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <title>Productos | Fragancias Argentinas - Venta perfumes Millanel </title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">  
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="contenerdorBodyGrid">
@@ -37,7 +37,7 @@
                             <a href="./productos.html">Productos</a>
                         </li>
                         <li>
-                            <a href="../index.html/nosotros">Nosotros</a>
+                            <a href="../index.html#nosotros">Nosotros</a>
                         </li>
                         <li>
                             <a href="./contacto.html">Contacto</a>
@@ -54,22 +54,22 @@
                 <button  class="navBoton" aria-expanded="false">
                     <img src="../assets/img/iconos/menu3lineas.svg" alt="icono de 3 lineas de menu"> 
                 </button>
-                <nav class="navDesplegable-item">
+                <nav class="navDesplegableitem">
                     <ul>
                         <li>
-                            <a href="index.html">Inicio</a>
+                            <a href="../index.html">Inicio</a>
                         </li>  
                         <li>
                             <a href="./productos.html">Productos</a>
                         </li>
                         <li>
-                            <a href="#nosotros">Nosotros</a>
+                            <a href="../index.html#nosotros">Nosotros</a>
                         </li>
                         <li>
-                            <a href="./contacto.html">Contacto</a>
+                            <a href="../pages/contacto.html">Contacto</a>
                         </li>
                         <li>
-                            <a href="./carrito.html" >
+                            <a href="../pages/carrito.html" >
                                 <img src="../assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
                             </a>
                         </li>
@@ -90,18 +90,70 @@
             </div>
         </section>
     </header>
-    <main class="main">
-        <p>main</p>
-        <h1>main</h1>
-        <h2>main</h2>
-        <h3>main</h3>
-        <h4>main</h4>
-        <h5>main</h5>
+        <!--***********************************************************************************************-->
+    <main class="main colorFondo">
+        <h1>Contacto</h1>
+        <div class="ContactoContenedorBis">    
+            <div class="ContactoItemBis">
+                <form class="colorPrincipal" action="">
+                    <h2>Puede completar el formulario para comunicarse con nosotros por: </h2>          
+                    <div class="formLinea"> 
+                        <input type="Ingrese su Nombre completo" required name="nombre" id="nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="25">
+                    </div>
+                    <div class="formLinea"> 
+                        <input type="Ingrese su email" required name="email" id="email" placeholder="Ingrese un email valido"> 
+                    </div>
+                    <div class="formLinea"> 
+                        <select name="provincia" id="provincia">
+                            <option value="1">Buenos Aires</option>
+                            <option value="2" selected>CABA (Ciud.Aut.Bs.As.)</option>
+                            <option value="3">Catamarca</option>
+                            <option value="4">Chaco</option>
+                            <option value="5">Chubut</option>
+                            <option value="6">Córdoba</option>
+                            <option value="7">Corrientes</option>
+                            <option value="8">Entre Ríos</option>
+                            <option value="9">Formosa</option>
+                            <option value="10">Jujuy</option>
+                            <option value="11">La Pampa</option>
+                            <option value="12">La Rioja</option>
+                            <option value="13">Mendoza</option>
+                            <option value="14">Misiones</option>
+                            <option value="15">Neuquén</option>
+                            <option value="16">Río Negro</option>
+                            <option value="17">Salta</option>
+                            <option value="18">San Juan</option>
+                            <option value="19">San Luis</option>
+                            <option value="20">Santa Cruz</option>
+                            <option value="21">Santa Fe</option>
+                            <option value="22">Santiago del Estero</option>
+                            <option value="23">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                            <option value="24">Tucumán</option>
+                        </select>
+                    </div>
+                    <div class="formLinea">
+                        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su número telefónico">
+                    </div>    
+                    <div class="formCuadro">
+                        <input type="text" required name="mensaje" id="mensaje" placeholder="Ingrese su mensaje o su consulta por favor" minlength="30" maxlength="2000">
+                    </div>
+                </form>  
+            </div>
+            <div class="ContactoItemBis">        
+                <div class="mapa">
+                    <h2>Visitanos en: </h2>
+                    <p><span class="fuenteNegrita60">Dirección:</span> Avenida Rivadavia 5450, CABA, CP 1405</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3283.330970078389!2d-58.444370925314786!3d-34.62107555841321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1728676103257!5m2!1ses!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                </div>  
+            </div>
+        </div> 
     </main>
+    <!--***********************************************************************************************-->
     <aside class="aside">
         <h2>aside   espacio pubicitario   </h2>  
         <h3>      su agancia de viaje                 destinos increibles</h3>
     </aside>
+        <!--***********************************************************************************************-->
     <footer class="footer colorPrincipal">
         <div class="contactoContenedor">
             <div class="contactoItem">
