@@ -478,7 +478,7 @@ body{
         flex-wrap:wrap;
         gap:2%;
         justify-content: center;
-        align-items:first baseline;
+        align-items:stretch;
         }
         .ContactoItemBis{
             /*display:flexbox;*/
@@ -488,12 +488,12 @@ body{
             margin:0  auto ;
             padding: 20 px;
             h2{
-                margin-bottom: 10px;   
+                margin-bottom: 10px;
             }
             form{
                 width: 100%;
                 margin: 2% ;
-                border: 2px solid #a0222d;
+                border: 3px solid rgb(128, 70, 139);;
                 border-radius: 8px;
                 input, select {
                     display:flex;
@@ -517,7 +517,6 @@ body{
                 }
                 iframe{
                         width:100%;
-                        height:100%;
                         border: 5px solid #ccc;
                         margin:0  auto ;
                 } 
@@ -526,6 +525,11 @@ body{
         @media screen and (min-width :601px){           
             .ContactoItemBis{   
                 width: 48%;
+                .mapa{
+                    iframe{
+                            height:60%;
+                    }     
+                }    
             }
         }
 
