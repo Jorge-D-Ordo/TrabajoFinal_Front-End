@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&display=swap');
 
-.contenerdorBodyGrid{
+.contenerdor-body-grid{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
@@ -13,7 +13,7 @@
     /* moviles moviles =<600  tablets =<900 pantallas resto 
         en movilees y tables aside encolumnado */
     @media screen and (min-width: 901px){
-    .contenerdorBodyGrid{
+    .contenerdor-body-grid{
         grid-template-columns: 4fr 1fr;
         grid-template-rows:    auto auto auto;
         grid-template-areas:"header header"
@@ -22,7 +22,7 @@
                             ;
     }
 }
-.colorPrincipal{
+.color-principal{
     background-color:  #ea98ff;
     color: black;
 }
@@ -30,7 +30,7 @@
     background-color:  #f9e8fd;
     color: black;
 }
-.colorFondo{
+.color-fondo{
     background: #efb3ff;
     background: linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
     background: -webkit-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
@@ -115,16 +115,16 @@ body{
             margin: 1.4rem ;
         } 
     }
-    .fuenteNegrita7{
+    .fuente-negrita7{
         font-weight: 700;
     }
-    .fuenteNegrita6{
+    .fuente-negrita6{
         font-weight: 600;
     }
     section[id]{ /*para bajar un poco los saltos de pagina y destaparlos del header*/
         scroll-margin-top:150px;
     }
-    .contenerdorHeaderGrid{
+    .contenerdor-header-grid{
         display: grid;
         grid-template-columns: 1fr 3.7fr 0.3fr 1fr;
         grid-template-rows:    1fr 0.5fr 0.3fr;
@@ -139,7 +139,7 @@ body{
         align-content: space-evenly;
     }
     @media screen and (min-width: 601px)and (max-width: 900px) { /*para tablet*/
-        .contenerdorHeaderGrid {
+        .contenerdor-header-grid {
             display: grid;
             grid-template-columns: 1fr 2fr 2fr 1fr ;
             grid-template-rows: 0.7fr 0.5fr 0.3fr ;
@@ -150,7 +150,7 @@ body{
         }
     }    
     @media screen and (min-width: 901px) { /*para patallas*/
-        .contenerdorHeaderGrid {
+        .contenerdor-header-grid {
             display: grid;
             grid-template-columns: 1fr 2fr 2fr 1fr ;
             grid-template-rows: 0.6fr 0.4fr 0.7fr ;
@@ -166,7 +166,7 @@ body{
         margin: 0;
         position:sticky;
         top:0;
-        .logoInstitucional { 
+        .logo-institucional { 
             grid-area: logoInst;
             object-fit: fill;
             img{ 
@@ -175,14 +175,14 @@ body{
             }
         } 
         @media screen and (min-width :601px){
-            .logoInstitucional { 
+            .logo-institucional { 
                 img{ 
                     width: 80%; 
                     margin: 0.5%;
                 }            
             }
         }      
-        .logoProductos { 
+        .logo-productos { 
             grid-area: logoProd; 
             object-fit: fill;
             margin: auto;
@@ -193,7 +193,7 @@ body{
             
         }
         @media screen and (min-width :601px){
-            .logoInstitucional { 
+            .logo-productos { 
                 img{ 
                     width: 70%; 
                     margin: 0.5%;
@@ -225,7 +225,7 @@ body{
                 font-weight: 700;
             }    
         }
-        .navPrincipal { 
+        .nav-principal { 
             grid-area: naveg;
             display: grid;
             width:100%;           
@@ -262,7 +262,7 @@ body{
                     font-size:1rem;
                 }    
             }
-            .navPrincipal { 
+            .nav-principal { 
                 a{
                     font-size: 0.8rem;     
                 }            
@@ -279,18 +279,18 @@ body{
                     font-size:1.2rem;
                 }    
             }
-            .navPrincipal { 
+            .nav-principal { 
                 a{
                     font-size: 1.2rem;     
                 }            
             }
         }
-        .navDesplegable {
+        .nav-desplegable-contenedor {
             grid-area: naveg;
             border: none;
             position: relative; 
         }     
-        .navDesplegableitem{
+        .nav-desplegable-item{
             display: none;           
             position: absolute; 
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -314,17 +314,17 @@ body{
                 }
             }
         }
-/*        &:focus-within .navDesplegableitem {
+/*        &:focus-within .nav-desplegable-item {
         display: block; /* Muestra el menú cuando el botón tiene foco 
         }   
-        .navBoton focus-within .navDesplegable-item {
+        .nav-boton focus-within .nav-desplegable-item {
             display: block;         
         }
-        .navBoton[aria-expanded="true"] +focus-within .navDesplegable-item {
+        .nav-boton[aria-expanded="true"] +focus-within .nav-desplegable-item {
             display: block;         
         }    */
         
-        .navBoton{
+        .nav-boton{
             border: none;
             background-color: inherit;
             img{
@@ -334,25 +334,25 @@ body{
         }
 
         @media screen and (max-width :600px){
-            .navBoton {
+            .nav-boton {
                 display: block;
             }
-            .navPrincipal{
+            .nav-principal{
                 display: none;
             }
         }    
         @media screen and (min-width :601px){
-            .navBoton{
+            .nav-boton{
                 display: none;
             }
-            .navPrincipal{
+            .nav-principal{
                 display: grid;
             }
         }    
-        .filtroProducto { 
+        .filtro-producto { 
             grid-area: filtroProd; 
         }
-        .busquedaProducto { 
+        .busqueda-producto { 
             grid-area: busqProd; 
             text-align:center;       
             width: 80%;
@@ -365,13 +365,13 @@ body{
         background-color: burlywood; /*******************************************************************/
         grid-area:main;
         /**************************************  index.html **************************************/
-        .razonSocial{
+        .razon-social{
             font-family: "Playwrite AR", serif;
             color: #69177e;
             font-size: 1.2em;                            
             font-weight: 700;
         }
-        .ofertaContenerdor{
+        .oferta-contenerdor{
             margin:0 auto;
             display:flex;
             flex-direction: row;
@@ -380,7 +380,7 @@ body{
             justify-content:space-evenly;
             align-items: center;    
         }
-        .ofertaItem{
+        .oferta-item{
             border: 10px solid rgb(38, 129, 129);
             border-radius: 30px; 
             background-color: rgb(61, 206, 206);
@@ -416,12 +416,12 @@ body{
             }
         }
         @media screen and (min-width: 601px)and (max-width: 900px){ /*para tablets*/
-            .ofertaItem{
+            .oferta-item{
                 width: 46%;
             }
         }
         @media screen and (min-width: 901px){ /*para pantallas*/
-            .ofertaItem{
+            .oferta-item{
                 width: 32%;
             }    
         }
@@ -474,7 +474,7 @@ body{
             }
         }
         /**************************************  contacto.html **************************************/
-        .ContactoContenedorBis{
+        .contacto-contenedorBis{
         display:flex;
         width: 100%;
         flex-wrap:wrap;
@@ -482,7 +482,7 @@ body{
         justify-content: center;
         align-items:stretch;
         }
-        .ContactoItemBis{
+        .contacto-itemBis{
             /*display:flexbox;*/
             display:flex;
             flex-wrap:  warp;
@@ -526,7 +526,7 @@ body{
             }
         }
         @media screen and (min-width :601px){           
-            .ContactoItemBis{   
+            .contacto-itemBis{   
                 width: 48%;
                 .mapa{
                     iframe{
@@ -700,18 +700,18 @@ body{
     footer{
         grid-area:footer;
         display:box;
-        .contactoContenedor{
+        .contacto-contenedor{
             display:flex;
             flex-wrap:wrap;
             align-content: space-evenly;
             justify-content:space-evenly;
             align-items: center; 
             padding:0.5rem ;
-            .contactoItem{
+            .contacto-item{
                 padding:2%;
             }
         }
-        .iconosRedes{
+        .iconos-redes{
             display:flex;
             width: 100%;
             padding: 0 20%;
@@ -725,7 +725,7 @@ body{
                 padding-bottom: 10px ;
             }
         }
-        .configWhatsapp{
+        .whatsapp-config{
             position:fixed;
             width:35px;
             bottom: 5px;
