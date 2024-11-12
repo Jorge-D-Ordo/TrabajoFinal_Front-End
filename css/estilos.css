@@ -26,7 +26,7 @@
     background-color:  #ea98ff;
     color: black;
 }
-.colorSecundario{
+.color-secundario{
     background-color:  #f9e8fd;
     color: black;
 }
@@ -362,7 +362,6 @@ body{
         }
     }
     main{
-        background-color: burlywood; /*******************************************************************/
         grid-area:main;
         /**************************************  index.html **************************************/
         .razon-social{
@@ -433,7 +432,7 @@ body{
             }
         }
         /**************************************  productos.html **************************************/
-        .productoContenedor{
+        .producto-contenedor{
             margin:0 auto;
             display:flex;
             flex-direction: row;
@@ -441,7 +440,7 @@ body{
             justify-content:space-evenly;
             align-items: center;    
         }
-        .productoItem{
+        .producto-item{
             border: 10px solid rgb(38, 129, 129);
             border-radius: 30px; 
             background-color: rgb(61, 206, 206);
@@ -474,7 +473,7 @@ body{
             }
         }
         /**************************************  contacto.html **************************************/
-        .contacto-contenedorBis{
+        .main-contacto-contenedor{
         display:flex;
         width: 100%;
         flex-wrap:wrap;
@@ -482,7 +481,7 @@ body{
         justify-content: center;
         align-items:stretch;
         }
-        .contacto-itemBis{
+        .main-contacto-item{
             /*display:flexbox;*/
             display:flex;
             flex-wrap:  warp;
@@ -505,7 +504,7 @@ body{
                     border-radius: 5px;
                     margin:  15px auto;            
                 }
-                .formCuadro{
+                .form-cuadro{
                     input{
                         padding: 40px 4% ;
                     }
@@ -526,7 +525,7 @@ body{
             }
         }
         @media screen and (min-width :601px){           
-            .contacto-itemBis{   
+            .main-contacto-item{   
                 width: 48%;
                 .mapa{
                     iframe{
@@ -536,7 +535,7 @@ body{
             }
         }
  /**************************************  carrito.html **************************************/
-        .tablainterna{
+        .tabla-interna{
             width: 95%;
             margin: 0 auto;
             border: 4px solid #a666b8;
@@ -552,7 +551,7 @@ body{
                 font-size: 90%;
             }
         }
-        .tablaChica, .tablaGrande{
+        .tabla-chica, .tablaGrande{
             width: 95%;
             margin: 0 auto;
             border: 4px solid #a666b8;
@@ -570,17 +569,17 @@ body{
             display:none;
         }
         @media screen and (min-width :601px){
-            .tablainterna{
+            .tabla-interna{
                 display:none;   
             }
-            .tablaChica{
+            .tabla-chica{
                 display:none;
             }
             .tablaGrande{
                 display:block;
             }
         }
-        .flex-container-botones{
+        .boton-flex-contenedor{
             display: flex;
             flex-wrap: warp;
             width: 85%;
@@ -591,7 +590,7 @@ body{
             justify-content:space-evenly;
             align-items: center; 
         }
-        .flex-item-botones{
+        .boton-flex-item{
             border: 4px solid  #a666b8;
             border-radius: 25px;
             padding: 10px;
@@ -609,7 +608,7 @@ body{
                 text-align:center
             }
         }
- /**************************************  usuario.html **** usuario-registro.html **** usuario-blanqueo.html **************************************/
+ /**********  usuario.html ****** usuario-registro.html ****** usuario-blanqueo.html **********/
         .login-contenedor {
             width: 100%;
             max-width: 400px;
