@@ -609,7 +609,7 @@ body{
                 text-align:center
             }
         }
- /**************************************  usuario.html **************************************/
+ /**************************************  usuario.html **** usuario-registro.html **** usuario-blanqueo.html **************************************/
         .login-contenedor {
             width: 100%;
             max-width: 400px;
@@ -675,9 +675,21 @@ body{
                     text-decoration: underline;
                 }
             }
-        } 
- /**************************************  usuario.html **************************************/
+            .login-select {
 
+                margin-bottom: 15px;
+                width: 100%;
+                padding: 0px;
+                select{
+                    width: 100%;
+                    font-size: .9em;
+                }
+            }
+            #pregunta-1, #pregunta-2 {
+                list-style-type: none; 
+             /*  no puedo mostrar una sola de la lista */
+            }
+        } 
 
 
     }
