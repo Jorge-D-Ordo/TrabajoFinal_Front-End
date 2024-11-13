@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos | Fragancias Argentinas - Venta perfumes Millanel </title>
+    <title>Usuario | Fragancias Argentinas - Venta perfumes Millanel </title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">  
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -50,11 +50,12 @@
                     </ul>
                 </nav>        
             </div>
-            <div class="nav-desplegable-contenedor color-principal" ><!-- para moviles -->
-                <button  class="nav-boton" aria-expanded="false">
-                    <img src="../assets/img/iconos/menu3lineas.svg" alt="icono de 3 lineas de menu"> 
-                </button>
-                <nav class="nav-desplegable-item">
+            <div class="nav-desplegable-contenedor" ><!-- para moviles -->
+                <input type="checkbox" id="alternar-menu" class="alternar-menu" >
+                <label for="alternar-menu" class="nav-boton">
+                    <img src="../assets/img/iconos/menu3lineas.svg" alt="Icono de menú">
+                </label>
+                <nav class="nav-desplegable-item color-principal">
                     <ul>
                         <li>
                             <a href="../index.html">Inicio</a>
@@ -115,12 +116,28 @@
             </form>  
         </div>
     </main>
-    <!--***********************************************************************************************-->
-    <aside class="aside">
-        <h2>aside   espacio pubicitario   </h2>  
-        <h3>      su agancia de viaje                 destinos increibles</h3>
+    <aside class="aside color-secundario">
+        <h1>Espacio pubicitario</h1>  
+        <section class="pubicidad-contenedor">
+            <div class="pubicidad-tarjeta">
+
+                <div class="pubicidad-item">
+                    <p>Su agancia de viaje</p>
+                    <video autoplay muted loop controls>
+                        <source src="./assets/video/Publicidad1.mp4" type="video/mp4">
+                    </video>           
+                </div> 
+            </div>
+            <div class="pubicidad-tarjeta">
+                <p>Destinos increibles</p>
+                <div class="pubicidad-item">
+                    <video autoplay muted loop controls>
+                        <source src="./assets/video/Publicidad2.mp4" type="video/mp4">
+                    </video> 
+                </div>
+            </div>
+        </section>        
     </aside>
-        <!--***********************************************************************************************-->
     <footer class="footer color-principal">
         <div class="contacto-contenedor">
             <div class="contacto-item">
@@ -135,27 +152,27 @@
         </div> 
         <div class="iconos-redes">
             <a href="https://www.facebook.com" target="_blank">
-                <img src="../assets/img/Redes/2023_Facebook_icon.svg" alt="Logo Facebook" style="width:20px">
+                <img src="../assets/img/redes/2023_Facebook_icon.svg" alt="Logo Facebook" style="width:20px">
             </a>
             <a href="https://x.com/?lang=es" target="_blank">
-                <img src="../assets/img/Redes/X_logo_2023.svg" alt="Logo X ex twitter" style="width:20px">
+                <img src="../assets/img/redes/X_logo_2023.svg" alt="Logo X ex twitter" style="width:20px">
             </a>
             <a href="https://www.instagram.com" target="_blank">
-                <img src="../assets/img/Redes/Instagram_logo_2022.svg" alt="Logo instragram" style="width:20px">
+                <img src="../assets/img/redes/Instagram_logo_2022.svg" alt="Logo instragram" style="width:20px">
             </a>
             <a href="https://www.linkedin.com" target="_blank">
-                <img src="../assets/img/Redes/LinkedIn_icon2.svg" alt="Logo linkedin" style="width:20px">
+                <img src="../assets/img/redes/LinkedIn_icon2.svg" alt="Logo linkedin" style="width:20px">
             </a>
             <a href="https://web.telegram.org/k/"target="_blank">
-                <img src="../assets/img/Redes/Telegram_logo.svg" alt="Logo Telegram" style="width:21px">
+                <img src="../assets/img/redes/Telegram_logo.svg" alt="Logo Telegram" style="width:21px">
             </a>
             <a href="https://discord.com/"target="_blank">
-                <img src="../assets/img/Redes/discord-round-color-icon.svg" alt="Logo Discord" style="width:21px">
+                <img src="../assets/img/redes/discord-round-color-icon.svg" alt="Logo Discord" style="width:21px">
             </a>  
         </div>
         <div class="whatsapp-config">     
             <a href="https://web.whatsapp.com/send?phone=+5491100000000" target="_blank">
-                <img src="../assets/img/Redes/WhatsApp.svg" alt="Logo WhatsApp" >
+                <img src="../assets/img/redes/WhatsApp.svg" alt="Logo WhatsApp" >
             </a> 
         </div>
     </footer>
