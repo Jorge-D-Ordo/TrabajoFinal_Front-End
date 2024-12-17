@@ -95,17 +95,20 @@
         <h1>Contacto</h1>
         <div class="main-contacto-contenedor">    
             <div class="main-contacto-item">
-                <form class="color-principal" action="">
+                <form class="color-principal" action="" id="formularioContacto">
                     <h2>Comunicarse con nosotros: </h2>          
                     <div class="form-linea"> 
-                        <input type="text" required name="nombre" id="nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="25">
+                        <input type="text" required name="nombreCompleto" id="nombreCompleto" placeholder="Ingrese su nombre completo" minlength="3" maxlength="50">
+                        <small class="text-aviso-error" id="errorNombre">Solo permite: letras, acentos, ñ y 1 espacio entre palabras. Intente nuevamente.</small>
                     </div>
                     <div class="form-linea"> 
-                        <input type="email" required name="email" id="email" placeholder="Ingrese un email valido"> 
+                        <input type="email" required name="email" id="email" placeholder="Ingrese un email valido">
+                        <small class="text-aviso-error" id="errorEmail">El fomato del mail es incorrecto, Intente nuevamente.</small>
                     </div>
                     <div class="form-linea"> 
                         <select name="provincia" id="provincia">
-                            <option value="1" selected>CABA (Ciud.Aut.Bs.As.)</option>
+                            <option value="0" selected>Seleccionar</option>
+                            <option value="1">CABA (Ciud.Aut.Bs.As.)</option>
                             <option value="2">Buenos Aires</option>
                             <option value="3">Catamarca</option>
                             <option value="4">Chaco</option>
@@ -130,13 +133,19 @@
                             <option value="23">Tierra del Fuego, Antárt.e Is.del Atlán.Sur<</option>
                             <option value="24">Tucumán</option>
                         </select>
+                        <small class="text-aviso-error" id="errorProvincia">Debe elegir una provincia.</small> 
                     </div>
                     <div class="form-linea">
                         <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su número telefónico">
+                        <small class="text-aviso-error" id="errorTelefono">Ingrese un teléfono válido.</small>
                     </div>    
                     <div class="form-cuadro">
-                        <input type="text" required name="mensaje" id="mensaje" placeholder="Ingrese su mensaje o su consulta por favor" minlength="30" maxlength="2000">
-                    </div>
+                        <input type="text" required name="mensaje" id="mensaje" placeholder="Ingrese su mensaje o su consulta por favor" minlength="3" maxlength="400">
+                        </div>
+                    <div class="boton-suceso">
+                        <input  type="submit" value="Enviar" class="boton-form-contacto">
+                        <input  type="reset" value="Cancelar"class="boton-form-contacto">
+                    </div>     
                 </form>  
             </div>
             <div class="main-contacto-item">        
@@ -208,5 +217,6 @@
             </a> 
         </div>
     </footer>
+    <script src="../js/validacion.js"></script>
 </body>
 </html>
