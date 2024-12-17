@@ -61,7 +61,6 @@ formulario.addEventListener("submit", (event) =>  {   // Prevenir el envío del 
     }
 
 
-    console.log("formulario correcto:"+formularioValido);
     // Si el formulario es válido, se puede enviar
     if (formularioValido) {
         alert("Formulario enviado correctamente.");  
@@ -94,6 +93,6 @@ botonCancelar.addEventListener("click", (event) => { // Prevenir el envío del f
     // Ocultar los mensajes de error (en caso de que estén visibles)
     const errores = document.querySelectorAll('.text-aviso-error');
     errores.forEach(error => {
-        error.classList.add("d-none");
+        error.style.display = "none";
     });
 });
