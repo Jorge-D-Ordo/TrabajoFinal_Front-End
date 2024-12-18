@@ -74,8 +74,6 @@ formulario.addEventListener("submit", (event) =>  {   // Prevenir el envío del 
             telefono: telefono,
             mensaje: mensaje
         }
-    }else {
-            alert("Formulario enviado no salio, hay errores de validacion."); 
     }
 
         // llamariamos a un api del backend y le mandariamos la informacion en formato json{
