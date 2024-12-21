@@ -1,89 +1,179 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const tablaCarrito = document.getElementById("tablaCarrito");
-    const totalCarrito = document.getElementById("totalCarrito");
+    const tablaCarritoChica = document.getElementById("tablaCarritoChica");
+    const tablaCarritoGrande = document.getElementById("tablaCarritoGrande");
+    const totalCarrito = document.getElementsByClassName("totalCarrito")[0];
+    const cantArticulos = document.getElementsByClassName("cantArticulos")[0];
+    const totalCarritoG = document.getElementsByClassName("totalCarritoG")[0];
+    const cantArticulosG = document.getElementsByClassName("cantArticulosG")[0];
 
     // Obtener carrito de localStorage
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+    // Función calculo de subtotales (cantidadx precio de un producto)
+    function subtotal(precio,cantidad) { 
+        // input    precio es un texto con signo $ y coma
+        //          cantidad es un texto de numero entero
+        let subtotal =precio.replace(/\,/g, '.');
+                subtotal=cantidad*parseFloat(subtotal.replace(/[^\d.-]/g, ''));
+        return subtotal;   
+    }
+
     // Función para renderizar el carrito
     const renderizarCarrito = () => {
         // Limpiar tabla
-        tablaCarrito.innerHTML = "";
+        tablaCarritoChica.innerHTML = "";
+        tablaCarritoGrande.innerHTML = "";
 
         if (carrito.length === 0) {
-            tablaCarrito.innerHTML = "<tr><td colspan='3'>El carrito está vacío.</td></tr>";
-            totalCarrito.textContent = "0.00";
+            totalCarrito.textContent = 0.0;
+            totalCarritoG.textContent = 0.0;
+            cantArticulos.textContent = 0 ;
+            cantArticulosG.textContent = 0 ;
             return;
         }
 
-        // Renderizar productos en la tabla
+        // Renderizar productos en la tabla chica
         carrito.forEach((producto, index) => {
+            
+            // crear la fila de tabla chica
             const fila = document.createElement("tr");
-            fila.innerHTML = `
-                <td>${producto.nombre}</td>
-                <td>$${producto.precio}</td>
-                <td>
-                    <button class="btn btn-danger btn-sm" data-index="${index}">Eliminar</button>
-                </td>
+            // crear la fila de tabla grande
+            const filaG = document.createElement("tr");
+
+            // Crear la tabla anidada
+            const tablaAnidada = document.createElement("table");
+            tablaAnidada.classList.add("tabla-interna", "color-secundario");
+
+            // Rellenar la tabla anidada con la información del producto
+            tablaAnidada.innerHTML = `
+                <tr>
+                    <td>${producto.codigo}</td>
+                    <td colspan="3">${producto.nombre}</td>               
+                </tr>
+                <tr>
+                    <td>${producto.volumen}</td>
+                    <td>${producto.precio}</td>
+                    <td><input type="number" value= ${producto.cantidad} data-index="${index}" class="cantidad-input  color-secundario" min=0></td>
+                    <td class="subtotal">$${subtotal(producto.precio,producto.cantidad).toFixed(2)}</td>
+                </tr>
+            </tr> 
             `;
-            tablaCarrito.appendChild(fila);
-        });
+            // Crear la tabla grande
+            filaG.innerHTML = `
+                <td>${producto.codigo}</td>
+                <td>${producto.nombre}</td>               
+                <td>${producto.volumen}</td>
+                <td>${producto.precio}</td>
+                <td><input type="number" value= ${producto.cantidad} data-index="${index}" class="cantidad-input  color-secundario" min=0></td>
+                <td class="subtotal">$${subtotal(producto.precio,producto.cantidad).toFixed(2)}</td>                
+            `;
 
-        // Actualizar el total
-        calcularTotal();
-    };
-    //El método reduce es una method de los arrays en JavaScript que se utiliza para iterar sobre los elementos de un array y reducirlos a un único valor (como un número, un objeto, una cadena, etc.).
-    //array.reduce(callback(acumulador, valorActual[, índice[, array]]), valorInicial)
-
-
-    const calcularTotal = () => { 
-        // Declaración de la función calcularTotal como una función flecha.
-        
-        const total = carrito.reduce((suma, producto) => suma + parseFloat(producto.precio), 0);
-        // Usamos el método .reduce() para calcular la suma de los precios de los productos en el carrito:
-        // - `suma` es el acumulador que empieza en 0 (segundo argumento de reduce).
-        // - `producto` es cada elemento (objeto) del array `carrito`.
-        // - `parseFloat(producto.precio)` convierte el precio del producto a número decimal (en caso de que esté en formato texto).
-        // - La función suma el precio de cada producto al acumulador `suma`.
-    
-        totalCarrito.textContent = total.toFixed(2);
-        // Redondeamos el total a 2 decimales usando .toFixed(2) y actualizamos el contenido del elemento
-        // HTML con ID `totalCarrito` para mostrar el total calculado.
-    };
-    
-
-    // Event listener para eliminar un producto
-    tablaCarrito.addEventListener("click", (event) => { 
-        // Añadimos un event listener al elemento con ID `tablaCarrito`.
-        // Este listener detecta un click en cualquier parte del cuerpo de la tabla.
-    
-        if (event.target.classList.contains("btn-danger")) { 
-            // Verificamos si el elemento clicado (`event.target`) tiene la clase `btn-danger`.
-            // Esto asegura que solo reaccione a clicks en los botones "Eliminar".
-    
-            const index = event.target.getAttribute("data-index"); 
-            // Obtenemos el atributo `data-index` del botón clickeado.
-            // Este atributo indica la posición del producto en el array `carrito`.
-    
-            carrito.splice(index, 1); 
-            // Eliminamos del array `carrito` el producto correspondiente.
-            // El método `splice(index, 1)` elimina 1 elemento en la posición `index`.
-    
-            localStorage.setItem("carrito", JSON.stringify(carrito)); 
-            // Actualizamos el almacenamiento local (`localStorage`) con el nuevo estado del carrito.
-            // Convertimos el array actualizado a una cadena JSON.
-    
-            renderizarCarrito(); 
-            // Llamamos a la función `renderizarCarrito` para actualizar la tabla del carrito en la página.
-            // Esto asegura que la tabla refleje el cambio tras eliminar un producto.
-        }
+        // Insertar la tabla anidada dentro de la fila principal tabla chica
+        const celda = document.createElement("td");
+        celda.appendChild(tablaAnidada);
+        fila.appendChild(celda);
+        tablaCarritoChica.appendChild(fila);
+        // insertar en la tabla grande
+        tablaCarritoGrande.appendChild(filaG);
     });
-    
-    //El método JSON.stringify convierte un valor de JavaScript (como un objeto o un array) en una cadena de texto JSON. Esto es útil para almacenar datos complejos en formatos como localStorage, o para enviar datos en una solicitud HTTP.
-    //JSON.stringify(valor[, reemplazo[, espacio]])
-    //JSON.stringify convierte el carrito actualizado en una cadena de texto para almacenarlo en localStorage.
 
+    // Agregar evento a los inputs para actualizar el subtotal y total
+    const inputsCantidad = document.querySelectorAll(".cantidad-input");
+    inputsCantidad.forEach((input) => {
+        input.addEventListener("input", (e) => {
+            const index = e.target.dataset.index; // Obtener el índice del producto
+            let cantidad = parseInt(e.target.value, 10); // Obtener la nueva cantidad
+            
+              // Validar que la cantidad no sea negativa
+            if (cantidad < 0) {
+                cantidad = 0; // Si es negativa, ponerla a 0
+                e.target.value = cantidad; // Actualizar el valor del input
+            }
+            
+            carrito[index].cantidad = cantidad; // Actualizar la cantidad en el carrito
 
-    // Renderizar carrito al cargar la página
+            // Actualizar el subtotal en la tabla
+            const precio = carrito[index].precio;
+            const subtotalActualizado = subtotal(precio, cantidad);
+            const subtotalSpan = e.target.closest("tr").querySelector(".subtotal");
+            subtotalSpan.textContent = `$${subtotalActualizado.toFixed(2)}`;
+
+            // Recalcular el total después de cambiar la cantidad
+            actualizarTotal();
+            // Guardar el carrito actualizado en localStorage
+            guardarCarrito();
+        });
+    });
+
+    // Calcular y mostrar el total actualizado
+    actualizarTotal();
+};
+
+    // Función para actualizar el total general
+    const actualizarTotal = () => {
+        let total = 0;
+        let cantidadTotal = 0;
+        carrito.forEach((producto) => {
+            const subtotalProducto = subtotal(producto.precio, producto.cantidad);
+            total += subtotalProducto;
+            cantidadTotal += producto.cantidad;
+        });
+       
+
+        // Actualizar el pie de la tabla con el total
+        totalCarrito.textContent = `$${total.toFixed(2)}`;
+        totalCarritoG.textContent = `$${total.toFixed(2)}`;
+        cantArticulos.textContent = cantidadTotal;
+        cantArticulosG.textContent = cantidadTotal;
+    };
+
+    // Función para guardar el carrito actualizado en localStorage
+    const guardarCarrito = () => {
+        localStorage.setItem("carrito", JSON.stringify(carrito));  // Guardar en localStorage
+    };
+
+    // Llamar a la función renderizarCarrito para mostrar el carrito al cargar la página
     renderizarCarrito();
-});
+
+    // Seleccionamos el botón "Pagar"
+    const botonPagar = document.getElementById('botonPagar');
+
+    // Función para manejar el clic en "Pagar"
+    botonPagar.addEventListener('click', () => {
+
+        // Filtrar productos cuyo contador es 0
+        carrito.forEach((producto, index) => {
+            if (producto.cantidad === 0) {
+                carrito.splice(index, 1); // Elimina el producto del carrito
+            }
+        });
+    // Recalcular el total después de cambiar la cantidad
+    actualizarTotal();
+    renderizarCarrito();
+    // Guardar el carrito actualizado en localStorage
+    guardarCarrito();
+    alert(`Compra realizada por un monto de ${totalCarrito.textContent}. El pago fue exitoso.`);
+    });    
+
+    // Seleccionamos el botón "cancelar"
+    const botonCancelar = document.getElementById('botonCancelar');
+
+    // Función para manejar el clic en "cancelar"
+    botonCancelar.addEventListener('click', () => {
+
+        // Limpiar el carrito (vaciar el arreglo)
+        carrito.length = 0; // Vaciar el carrito
+
+        guardarCarrito();
+
+        // Limpiar tabla
+        tablaCarritoChica.innerHTML = "";
+        tablaCarritoGrande.innerHTML = "";
+        totalCarrito.textContent = 0.0;
+        totalCarritoG.textContent = 0.0;
+        cantArticulos.textContent = 0 ;
+        cantArticulosG.textContent = 0 ;
+        renderizarCarrito();
+        
+    });
+});    

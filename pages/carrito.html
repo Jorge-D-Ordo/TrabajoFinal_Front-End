@@ -96,6 +96,7 @@
             <table class="tabla-chica color-secundario">
             <thead>
                 <tr>
+                    <th>
                     <table class="tabla-interna color-secundario">
                         <tr>
                             <th>Código</th>
@@ -108,9 +109,11 @@
                             <th>Subtotal</th>
                         </tr>
                     </table>
+                    </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tablaCarritoChica">
+            <!-- modelo a sieguir
                 <tr>
                     <table class="tabla-interna color-secundario">
                         <tr>
@@ -125,59 +128,24 @@
                         </tr>
                     </table>
                 </tr>
-                <tr>
-                    <table class="tabla-interna color-secundario">
-                        <tr>
-                            <td>F_Perfume001</td>
-                            <td colspan="3" >Alternativa de Chanel Nº5 de Chanel</td>               
-                        </tr>
-                        <tr>
-                            <td>100 ml</td>
-                            <td>$ 15999.99</td>
-                            <td>1</td>
-                            <td>$ 15999.99</td>
-                        </tr>
-                    </table>
-                </tr>
-                <tr>
-                    <table class="tabla-interna color-secundario">
-                        <tr>
-                            <td>F_Perfume080</td>
-                            <td colspan="3" >Alternativa de Eden de Cacharel</td>               
-                        </tr>
-                        <tr>
-                            <td>60 ml</td>
-                            <td>$ 12699.99</td>
-                            <td>2</td>
-                            <td>$ 25399.98</td>
-                        </tr>
-                    </table>
-                </tr>
-                <tr>
-                    <table class="tabla-interna color-secundario">
-                        <tr>
-                            <td>M_Perfume065</td>
-                            <td colspan="3" >Alternativa de 212 Men de Carolina Herrera</td>               
-                        </tr>
-                        <tr>
-                            <td>30 ml</td>
-                            <td>$ 9499.99</td>
-                            <td>1</td>
-                            <td>$ 9499.99</td>
-                        </tr>
-                    </table>
-                </tr>
+             -->
             </tbody>
-            <tfoot>
+        
+            <tfoot >
+                <tr>
+                <td>
                 <table class="tabla-interna color-secundario">
                     <tr>
-                        <td>Cant. Aticulos</td>
+                        <td>Cant. Atículos</td>
                         <td colspan="3" >TOTAL</td>               
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td colspan="3">$ 65399.95</td>
-                    </tr>    
+                        <td class="cantArticulos">0</td>
+                        <td class="totalCarrito" colspan="3" >$ 0.00</td>
+                    </tr>
+                </table> 
+                </td> 
+                </tr>
             </tfoot>
         </table>
         <table class="tablaGrande tabla color-secundario">
@@ -189,10 +157,10 @@
                     <th>Precio</th>
                     <th>Cantidad</th>
                     <th>Subtotal</th>
-                    <th>Total</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tablaCarritoGrande">
+                <!-- modelo a seguir
                 <tr>
                     <td>Oferta1</td>
                     <td>Belle Rose de Millanel</td>
@@ -202,41 +170,16 @@
                     <td>$ 14499.99</td>
                     <td> </td>
                 </tr>
-                <tr>
-                    <td>F_Perfume001</td>
-                    <td>Alternativa de Chanel Nº5  de Chanel</td>
-                    <td>100 ml</td>
-                    <td>$ 15999.99</td>
-                    <td>1</td>
-                    <td>$ 15999.99</td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>F_Perfume080</td>
-                    <td>Alternativa de Eden de Cacharel</td>
-                    <td>60 ml</td>
-                    <td>$ 12699.99</td>
-                    <td>2</td>
-                    <td>$ 25399.98</td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>M_Perfume065</td>
-                    <td>Alternativa de 212 Men de Carolina Herrera</td>
-                    <td>30 ml</td>
-                    <td>$ 9499.99</td>
-                    <td>1</td>
-                    <td>$ 9499.99</td>
-                    <td> </td>
-                </tr>
+            -->    
             </tbody>
-            <tfoot>
+            <tfoot">
+            
                 <tr>
                     <td colspan="4">Total:</td>
-                    <td >5</td>
-                    <td> </td>
-                    <td>$ 65399.95</td>
+                    <td class="cantArticulosG" >0</td>
+                    <td class="totalCarritoG">$ 0.00</td>
                 </tr>
+              
             </tfoot>
         </table>      
         <section class="boton-flex-contenedor">
@@ -245,10 +188,10 @@
 
             </div>
             <div class="boton-flex-item">
-                <p>Cancelar</p>
+                <p id="botonCancelar">Cancelar</p>
             </div>
             <div class="boton-flex-item">
-                <p>Pagar</p>
+                <p id="botonPagar">Pagar</p>
             </div>
         </section>
         <div class="despedida">              
@@ -320,5 +263,6 @@
             </a> 
         </div>
     </footer>
+    <script src="../js/mostrar_carrito.js"></script>
 </body>
 </html>

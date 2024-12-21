@@ -563,37 +563,86 @@ body{
         }
  /**************************************  carrito.html **************************************/
         .tabla-interna{
+            width: 100%;
+            margin: 0 auto;
+            border: 4px solid #a666b8;
+            text-align: center;
+            font-size: 90%;
+            th, td {
+            border: 0px solid #e6a4f8;
+                height: 60px;
+                font-size: 90%;
+            }
+
+            tr:nth-child(even) th:nth-child(1),
+            tr:nth-child(even) td:nth-child(1) {
+                width: 25%;  /* Asigna un ancho fijo */         
+            }
+            tr:nth-child(even) th:nth-child(3),
+            tr:nth-child(even) td:nth-child(3) {
+                width: 15%;  /* Asigna un ancho fijo */           
+            }
+            tr:nth-child(even) th:nth-child(4),
+            tr:nth-child(even) td:nth-child(4) {
+                width: 33%;  /* Asigna un ancho fijo */
+            }
+
+        }
+
+        .tabla-chica{
             width: 95%;
             margin: 0 auto;
             border: 4px solid #a666b8;
             text-align: center;
-            th {
-            border: 1px solid #e6a4f8;
-                height: 60px;
-                font-size: 90%;
-            }
-            td {
-                border: 1px solid #e6a4f8;
+            th, td {
+                border: 1px solid #a666b8;
                 height: 40px;
                 font-size: 90%;
             }
-        }
-        .tabla-chica, .tablaGrande{
-            width: 95%;
-            margin: 0 auto;
-            border: 4px solid #a666b8;
-            text-align: center;
-            th {
-                border: 1px solid #a666b8;
-                height: 60px;
-            }
-            td {
-                border: 1px solid #a666b8;
-                height: 40px;
+            
+            input{
+                width: 100%;
+                height: 100%;
+                font-size: 90%;
+                text-align: center;
+                border: 0px 
             }
         }
+
         .tablaGrande{
             display:none;
+            width: 95%;
+            margin: 0 auto;
+            border: 4px solid #a666b8;
+            text-align: center;
+            th, td{
+                border: 1px solid #a666b8;
+                height: 60px;
+                font-size: 100%;    
+            }
+            th:nth-child(1), td:nth-child(1) {
+                width: 15%;  /* Asigna un ancho fijo */         
+            }
+            th:nth-child(3), td:nth-child(3) {
+                width: 3%;  /* Asigna un ancho fijo */        
+            }
+            th:nth-child(4), td:nth-child(4) {
+                width: 13%;  /* Asigna un ancho fijo */         
+            }
+            th:nth-child(5), td:nth-child(5) {
+                width: 3%;  /* Asigna un ancho fijo */           
+            }
+            th:nth-child(6), td:nth-child(6) {
+                width: 13%;  /* Asigna un ancho fijo */        
+            }                
+
+            input{
+                width: 100%;
+                height: 100%;
+                font-size: 100%;   
+                text-align: center;
+                border: 0px;
+            }
         }
         @media screen and (min-width :601px){
             .tabla-interna{

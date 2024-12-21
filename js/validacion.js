@@ -22,6 +22,7 @@ formulario.addEventListener("submit", (event) =>  {   // Prevenir el envío del 
     const errorEmail = document.getElementById("errorEmail");
     const errorProvincia = document.getElementById("errorProvincia");
     const errorTelefono = document.getElementById("errorTelefono");
+    const errorMensaje = document.getElementById("errorMensaje");
 
     // Inicializar validación
     let formularioValido = true;
@@ -35,6 +36,7 @@ formulario.addEventListener("submit", (event) =>  {   // Prevenir el envío del 
     } else {
         errorNombre.style.display = "none";
     }
+
     // Validar email
     // expresiones regulares
     const emailRegex =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$/;
@@ -52,14 +54,21 @@ formulario.addEventListener("submit", (event) =>  {   // Prevenir el envío del 
         errorProvincia.style.display = "none";
     }
     // Validar teléfono (asegurarse de que sea solo números)
-    const telefonoRegex = /^[0-9]{10,13}$/;  // Suponiendo que el teléfono tiene 10  a 13 dígitos
+    const telefonoRegex = /^[0-9]{10,12}$/;  // Suponiendo que el teléfono tiene 10  a 13 dígitos
     if (!telefonoRegex.test(telefono) && !telefono == "") {
         errorTelefono.style.display = "flex";
         formularioValido = false;
     } else {
         errorTelefono.style.display = "none";
     }
-
+    // Validar mensje
+    if (mensaje.length < 3 || mensaje.length > 400) {
+        //alert ("el nombre debe estar completo")
+        errorMensaje.style.display = "flex";
+        formularioValido = false;
+    } else {
+        errorMensaje.style.display = "none";
+    }
 
     // Si el formulario es válido, se puede enviar
     if (formularioValido) {

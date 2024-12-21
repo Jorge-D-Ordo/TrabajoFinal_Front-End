@@ -98,12 +98,12 @@
                 <form class="color-principal" action="" id="formularioContacto">
                     <h2>Comunicarse con nosotros: </h2>          
                     <div class="form-linea"> 
-                        <input type="text" required name="nombreCompleto" id="nombreCompleto" placeholder="Ingrese su nombre completo" minlength="3" maxlength="50">
-                        <small class="text-aviso-error" id="errorNombre">Solo permite: letras, acentos, ñ y 1 espacio entre palabras. Intente nuevamente.</small>
+                        <input type="text"  name="nombreCompleto" id="nombreCompleto" placeholder="Ingrese su nombre completo">
+                        <small class="text-aviso-error" id="errorNombre">Obligatorio y solo permite: letras, acentos, ñ y 1 espacio entre palabras.Minimo 3 caracteres.</small>
                     </div>
                     <div class="form-linea"> 
-                        <input type="email" required name="email" id="email" placeholder="Ingrese un email valido">
-                        <small class="text-aviso-error" id="errorEmail">El fomato del mail es incorrecto, Intente nuevamente.</small>
+                        <input type="email"  name="email" id="email" placeholder="Ingrese un email valido">
+                        <small class="text-aviso-error" id="errorEmail">No ingreso ningun mail o el formato es incorrecto.</small>
                     </div>
                     <div class="form-linea"> <!-- https://datosgobar.github.io/georef-ar-api/quick-start/ -->
                         <select name="provincia" id="provincia">
@@ -137,11 +137,12 @@
                     </div>
                     <div class="form-linea">
                         <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su número telefónico">
-                        <small class="text-aviso-error" id="errorTelefono">Ingrese un teléfono válido.</small>
+                        <small class="text-aviso-error" id="errorTelefono">Ingrese un teléfono con el código de area,  numero local y es opiconal en codigo pais (10a12 digitos sin espacios).</small>
                     </div>    
                     <div class="form-cuadro">
-                        <input type="text" required name="mensaje" id="mensaje" placeholder="Ingrese su mensaje o su consulta por favor" minlength="3" maxlength="400">
-                        </div>
+                        <input type="text" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje o su consulta por favor">
+                        <small class="text-aviso-error" id="errorMensaje">el mensaje debe tener entre  5 a 400 caracteres.</small> 
+                    </div>
                     <div class="boton-suceso">
                         <input  type="submit" value="Enviar" class="boton-form-contacto">
                         <input  type="reset" value="Cancelar"class="boton-form-contacto">
