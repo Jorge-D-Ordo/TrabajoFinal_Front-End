@@ -142,11 +142,11 @@ document.addEventListener("DOMContentLoaded", () => {
     botonPagar.addEventListener('click', () => {
 
         // Filtrar productos cuyo contador es 0
-        carrito.forEach((producto, index) => {
-            if (producto.cantidad === 0) {
-                carrito.splice(index, 1); // Elimina el producto del carrito
+        for (let i = carrito.length - 1; i >= 0; i--) {
+            if (carrito[i].cantidad === 0) {
+                carrito.splice(i, 1); // Elimina el producto del carrito
             }
-        });
+        };
     // Recalcular el total después de cambiar la cantidad
     actualizarTotal();
     renderizarCarrito();
