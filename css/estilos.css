@@ -809,7 +809,7 @@ body{
             gap:30px;
             div{               
                 text-align: center;
-                background-color:  rgb(128, 70, 139);
+                background-color: rgb(128, 70, 139);
                 border:2px solid  rgb(128, 70, 139);
                 padding: 0.5%;
                 border-radius: 8px;
@@ -826,6 +826,33 @@ body{
                     height: 100%;
                     object-fit: scale-down;
                 }
+                #resultadoClima{
+                    background-image: url('../assets/img/FondoClima1.png');
+                    background-size: cover; 
+                    background-position: center;
+                    width: 100%;
+                    div{  
+                        background-color: transparent;
+                        background-color: rgba(0, 0, 0, 0.3);
+                        border:0px;
+                        h2{
+                            color:white;
+                            margin: 0px auto;
+                            padding: 15px auto;
+                            font-size: 1em;
+                        }
+                        #icono-clima {
+                            width: 30px; 
+                            height: 30px; 
+                            border-radius: 5px; 
+                            background-color: rgba(255, 255, 255, 0.3); 
+                        }                       
+                        p{
+                            color:white;
+                            font-size: .8em;
+                        }
+                    }
+                }
             }
         }
         @media screen and (min-width: 401px) and (max-width: 900px){ /*para tablets*/
@@ -836,6 +863,23 @@ body{
                         padding: 15px auto;
                         font-size: 1em;
                     }
+                    #resultadoClima{                       
+                        div{  
+                            h2{
+                                font-size: 1.2em;
+                            }
+                            #icono-clima {
+                                width: 60px; 
+                                height: 60px; 
+                                border-radius: 10px; 
+                            }
+                            p{
+                                color:white;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+
                 }
             }
             .pubicidad-tarjeta{
